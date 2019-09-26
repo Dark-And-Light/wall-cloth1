@@ -1,0 +1,13 @@
+{
+    "usingComponents": {
+        "i-notice-bar": "/static/iview-weapp/notice-bar/index",
+        "i-grid": "/static/iview-weapp/grid/index",
+        "i-grid-item": "/static/iview-weapp/grid-item/index",
+        "i-grid-icon": "/static/iview-weapp/grid-icon/index",
+        "i-grid-label": "/static/iview-weapp/grid-label/index"
+    },
+    "navigationBarBackgroundColor": "#00b0ff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "主页",
+    "backgroundTextStyle": "light"
+}

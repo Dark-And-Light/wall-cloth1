@@ -1,0 +1,9 @@
+{
+    "navigationBarBackgroundColor": "#ffab00",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "购物车",
+    "backgroundTextStyle": "light",
+    "usingComponents": {
+        "i-swipeout": "/static/iview-weapp/swipeout/index"
+    }
+}

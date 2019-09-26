@@ -1,0 +1,50 @@
+{
+    "pages": [
+        "pages/index/main",
+        "pages/shoppingCar/main",
+        "pages/allGoods/main",
+        "pages/member/main",
+        "pages/details/main"
+    ],
+    "tabBar": {
+        "color": "#999",
+        "backgroundColor": "#fafafa",
+        "selectedColor": "#333",
+        "borderStyle": "white",
+        "list": [
+          {
+            "pagePath": "pages/index/main",
+            "text": "首页",
+            "iconPath":"/static/images/tabbar/home_off.png",
+            "selectedIconPath":"/static/images/tabbar/home_on.png"
+          },
+          {
+            "pagePath": "pages/shoppingCar/main",
+            "text": "购物车",
+            "iconPath":"/static/images/tabbar/shopping_off.png",
+            "selectedIconPath":"/static/images/tabbar/shopping_on.png"
+          },
+          {
+            "pagePath": "pages/allGoods/main",
+            "text": "全部商品",
+            "iconPath":"/static/images/tabbar/more_off.png",
+            "selectedIconPath":"/static/images/tabbar/more_on.png"
+          },
+          {
+            "pagePath": "pages/member/main",
+            "text": "会员中心",
+            "iconPath":"/static/images/tabbar/member_off.png",
+            "selectedIconPath":"/static/images/tabbar/member_on.png"
+          }
+        ],
+        "position": "bottom"
+    },
+    "usingComponents": {
+        "i-icon": "/static/iview-weapp/icon/index",
+        "i-switch": "/static/iview-weapp/switch/index",
+        "i-button": "/static/iview-weapp/button/index",
+        "i-toast": "/static/iview-weapp/toast/index",
+        "i-checkbox-group": "/static/iview-weapp/checkbox-group/index",
+        "i-checkbox": "/static/iview-weapp/checkbox/index"
+    }
+}
