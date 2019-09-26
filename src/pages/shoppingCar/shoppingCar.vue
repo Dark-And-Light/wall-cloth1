@@ -91,7 +91,12 @@ export default {
                     data:this.arr
                 })
             }else{
-                
+                console.log('删除')
+                this.arr.splice(index,1)
+                wx.setStorage({
+                    key:"arr",
+                    data:this.arr
+                })
             }
             this.$store.dispatch('updateCar',{index})
         },
@@ -111,14 +116,31 @@ export default {
         },
         allcheck(e){
             this.check = e.mp.detail.current
+            let checked = e.mp.detail.current
             console.log(this.check)
             if(e.mp.detail.current){
                 this.carList.forEach(item => {
                     item.checked = true;
                 });
-                let checked = e.mp.detail.current
+                
                 this.$store.dispatch('updatedCheck',{checked})
                 //点击全选之后数据还要需要传递给删除的数组
+               for(let key in this.carList) {
+                   this.arr.push(key)
+                   console.log(this.arr)
+               }
+               wx.setStorage({
+                        key:"arr",
+                        data:this.arr
+                })
+               
+            }else{
+                this.arr=[]
+                wx.setStorage({
+                        key:"arr",
+                        data:this.arr
+                })
+                this.$store.dispatch('updatedCheck',{checked})
             }
             
 
